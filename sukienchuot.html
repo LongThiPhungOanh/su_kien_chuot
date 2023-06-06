@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <form>
+        <img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" style = "width: 50%"; height="100px"/>
+        <p style="color: red" >Click button below to move the image to right</p>
+        <input style="background-color: brown" type="button" value="Click Me" onclick="moveR();" /></form>
+</form>
+<script>
+    var a = null;
+    a = document.getElementById("myImage");
+    function init() {
+        a = document.getElementById("myImage");
+        a.style.position = "relative";
+        a.style.left = '0px'
+    }
+    function moveR() {
+        a.style.left = parseInt(a.style.left) + 10 + "px";
+    }
+    window.onload = init;
+
+</script>
+</body>
+</html>
